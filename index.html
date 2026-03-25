@@ -3,28 +3,80 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- WhatsApp Preview -->
+  <!-- Open Graph (WhatsApp Preview) -->
   <meta property="og:title" content="Akshay CP" />
   <meta property="og:description" content="Chat with me directly on WhatsApp 🚀" />
-  <meta property="og:image" content="https://akshaycp.com/whatsapp/chatwithakshay.png" />
+  <meta property="og:image" content="https://akshaycp.com/whatsapp/chatwithakshay.png?v=2" />
   <meta property="og:url" content="https://www.akshaycp.com/whatsapp" />
   <meta property="og:type" content="website" />
 
-  <!-- Optional but helps -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Delay redirect -->
-  <meta http-equiv="refresh" content="2; url=https://wa.me/918943418093">
+  <!-- IMPORTANT: Delay redirect (gives WhatsApp time to read OG tags) -->
+  <meta http-equiv="refresh" content="6; url=https://wa.me/918943418093">
 
   <script>
     setTimeout(() => {
-      window.location.replace("https://wa.me/918943418093");
-    }, 2000);
+      window.location.href = "https://wa.me/918943418093";
+    }, 6000);
   </script>
 
-  <title>Redirecting...</title>
+  <title>Chat with Akshay 🚀</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    p {
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    a:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-<body style="text-align:center; margin-top:20%; font-family:sans-serif;">
-  <p>Opening WhatsApp...</p>
+
+<body>
+  <div class="card">
+    <h1>Chat with Akshay 🚀</h1>
+    <p>Opening WhatsApp automatically...</p>
+    <a href="https://wa.me/918943418093">Open Now</a>
+  </div>
 </body>
 </html>
